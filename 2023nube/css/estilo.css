@@ -1,0 +1,34 @@
+/* Reset CSS */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  gap: 10px;
+  grid-template: 80px auto 50px / 0.2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "menu contenido"
+    "menu footer";
+}
+.header {
+  background: #3b0da5;
+  grid-area: header;
+}
+.menu {
+  background: #664aa7;
+  grid-area: menu;
+}
+.contenido {
+  background: #e4e4e4;
+  grid-area: contenido;
+}
+.footer {
+  background: #000;
+  grid-area: footer;
+}
